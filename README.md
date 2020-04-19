@@ -2,6 +2,9 @@
 To repozytorium zawiera zadanie do wykonania w ramach laboratorium oraz
 prezentację i przykłady z seminarium.
 
+# Wymagania
+- Docker
+
 # Instrukcja
 Zadanie należy rozwiązywać w przygotowanym środowisku Dockerowym.
 Aby uruchomić to środowisko, należy wpisać poniższą komendę:
