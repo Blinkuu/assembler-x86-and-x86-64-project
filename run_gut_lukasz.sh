@@ -13,7 +13,7 @@ then
   echo '================================================';
   echo
 
-  docker build -t gut-lukasz-assembler .
+  docker build -t gutlukasz:1.0 .
 
   echo
   echo '================================================';
@@ -21,7 +21,7 @@ then
   echo '================================================';
   echo
 
-  docker run -it gut-lukasz-assembler
+  docker run -it gutlukasz:1.0
 
 fi
 
