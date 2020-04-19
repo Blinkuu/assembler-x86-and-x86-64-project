@@ -19,6 +19,11 @@ then
 elif [ $1 == 'run' ]
 then
 
+  if [[ -d "assembler-x86-and-x86-64-project" ]]
+  then
+      cd assembler-x86-and-x86-64-project
+  fi
+
   echo '================================================';
   echo '==========Budowanie obrazu Dockerowego==========';
   echo '================================================';
