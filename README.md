@@ -10,7 +10,7 @@ Zadanie należy rozwiązywać w przygotowanym środowisku Dockerowym.
 Aby uruchomić to środowisko, należy wpisać poniższą komendę:
 
 ```sh
-run_gut_lukasz.sh run
+./run_gut_lukasz.sh run
 ```
 
 Skrypt ten uruchamia specjalnie przygotowany obraz Dockerowy, który
