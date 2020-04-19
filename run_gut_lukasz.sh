@@ -6,8 +6,19 @@ then
   exit 1
 fi
 
-if [ $1 == 'run' ];
+if [ $1 == 'clone' ];
 then
+
+  echo '================================================';
+  echo '=============Klonowanie repozytorium============';
+  echo '================================================';
+  echo
+
+  git clone https://github.com/Blinkuu/assembler-x86-and-x86-64-project
+
+elif [ $1 == 'run' ];
+then
+
   echo '================================================';
   echo '==========Budowanie obrazu Dockerowego==========';
   echo '================================================';
@@ -23,6 +34,18 @@ then
 
   docker run -it gutlukasz:1.0
 
+elif [ $1 == 'clean' ]
+  echo
+  echo '================================================';
+  echo '==========Usuwanie pobranej zawartości==========';
+  echo '================================================';
+  echo
+
+  if [[ ! -d "assembler-x86-and-x86-64-project" ]]
+    then
+        cd .. 
+    fi
+    rm -rf assembler-x86-and-x86-64-project
 fi
 
 exit 0

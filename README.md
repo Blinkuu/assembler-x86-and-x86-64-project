@@ -34,6 +34,9 @@ Wypisać na ekran informację:
 Error
 ```
 
+Jeżeli podany ciąg znaków jest poprawny, program powinien wypisać 
+przetworzony string na standardowe wyjście.
+
 
 # Materiały
 
