@@ -12,10 +12,11 @@ while read p; do
   echo "[TEST $i]"
 
   test_case=${p%:*}
-  test_case_result=${p##*:}  
-  result=$(./a.out <<< $test_case)
+  test_case_result=${p##*:}
+
+  result=$(./a.out <<< "$test_case" | tr -d '\0')
   result=$(echo $result | cut -f2- -d ' ')
-  
+
   if [[ "$result" != "$test_case_result" ]];
   then
     echo "[FAILED]"

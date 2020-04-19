@@ -31,7 +31,7 @@ Program powinien obsługiwać ciągi znaków o nie większej niż 255.
 Jeżeli użytkownik poda ciąg znaków o większej długości, program powinien
 Wypisać na ekran informację:
 ```sh
-Provided string exceeds maximum size. Maximum string size is 255.
+Error
 ```
 
 
