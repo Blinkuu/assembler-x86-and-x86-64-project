@@ -17,12 +17,13 @@ while read p; do
   result=$(./a.out <<< "$test_case" | tr -d '\0')
   result=$(echo $result | cut -f2- -d ' ')
 
+  echo "INPUT: $test_case"
+  echo "OUTPUT: $result"
+
   if [[ "$result" != "$test_case_result" ]];
   then
+    echo "EXPECTED OUTPUT: $test_case_result"
     echo "[FAILED]"
-    echo "[INPUT: $test_case]"
-    echo "[OUTPUT: $result]"
-    echo "[EXPECTED OUTPUT: $test_case_result]"
     exit 1
   fi
   
